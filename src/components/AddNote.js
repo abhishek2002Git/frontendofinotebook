@@ -1,4 +1,4 @@
-import React, { useContext, useState, useRef } from "react";
+import React, { useContext, useState } from "react";
 import noteContext from "../context/notes/noteContext";
 
 const AddNote = (props) => {
@@ -6,7 +6,6 @@ const AddNote = (props) => {
   const { addNote } = context;
   const [note, setNote] = useState({ title: "", description: "", tag: "" });
   const { showHide, setShowHide} = props;
-  console.log(showHide)
   const convertShowHideToHide = () =>{
     setShowHide('hide')
   }

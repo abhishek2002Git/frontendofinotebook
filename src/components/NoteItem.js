@@ -4,11 +4,15 @@ import noteContext from "../context/notes/noteContext";
 const NoteItem = (props) => {
   const context = useContext(noteContext)
   const {deleteNote} = context;
-  const { note , updateNote} = props;
+  const { note , updateNote, searchTxt} = props;
+  // console.log(searchTxt)
+  // let p = document.getElementsByTagName("p")[0].innerText;
+  // console.log(p)
+
   return (
     <div  className="col-md-3" >
-      <div className="card my-3" style={{borderRadius:'20px'}}>
-        <div className="card-body align-items-center">
+      <div className={`card my-3 ${note.description.includes(searchTxt)?'':'d-none'} `} style={{borderRadius:'20px'}}>
+        <div className="card-body align-items-center ">
           <h5 onClick={()=>{updateNote(note)}} className="card-title align-items-center">{note.title}</h5>
           <p onClick={()=>{updateNote(note)}} className="card-text">
             {note.description.slice(0,500)}{note.description.length>500?'...':""}
@@ -19,6 +23,7 @@ const NoteItem = (props) => {
       </div>
     </div>
   );
+
 };
 
 export default NoteItem;

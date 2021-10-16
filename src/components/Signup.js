@@ -7,7 +7,7 @@ const Signup = (props) => {
     
     const [showPassword, setShowPassword] = useState("password")
     const showPass = () =>{
-      if (showPassword == "password") {
+      if (showPassword === "password") {
         setShowPassword("text")
       }
       else{
@@ -46,7 +46,7 @@ const Signup = (props) => {
       };
 
   return (
-    <div className="container">
+    <div  className="container my-10">
       <h1 className="my-3">Sign Up</h1>
       <form onSubmit={handleSubmit}>
       <div className="mb-3">

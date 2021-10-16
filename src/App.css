@@ -29,13 +29,13 @@ label:focus
    }
   .navbar-collapse {
       position: absolute;
-      top: 54px;
+      top: 0;
       left: 0;
       padding-left: 15px;
       padding-right: 15px;
       padding-bottom: 1500px;
-      width: 46%;
-      background-color: #f9f9f9;
+      width: 48%;
+      background-color: #f0f0f0;
       float: left;
   }
    .navbar-collapse.collapsing { 
@@ -56,10 +56,15 @@ label:focus
       
   } 
   #logoutBtnPhone{
-    margin-top: 340px;
-    /* margin-left: 15%; */
-    width: 110px;
-    align-items: center;
+    margin-top: 270%;
+    width: 1000px;
+    margin-left:5%;
+    margin-right:5%;
+
+  }
+  #divWhichShowsNotes{
+    display: flex;
+    flex-direction: column-reverse;
   }
  
 }

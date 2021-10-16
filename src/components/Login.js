@@ -9,7 +9,7 @@ const Login = (props) => {
 
   const [showPassword, setShowPassword] = useState("password")
     const showPass = () =>{
-      if (showPassword == "password") {
+      if (showPassword === "password") {
         setShowPassword("text")
       }
       else{
