@@ -15,8 +15,8 @@ export const About = () => {
             <br />
             <h5 className="my-3">Please do use this website and give feedback, whether it is designing or adding some new features.</h5>
             <h5 className="my-3">Email us on abhishe2002shukla007@gmail.com for giving your valuable feedback.</h5>
-            <h5 className="my-3"><a target="_blank" rel="noreferrer" href="https://github.com/abhishek2002Git/iNoteBook">Click here</a> to checkout the github repositry for the source code of front end.</h5>
-            <h5 className="my-3"><a target="_blank" rel="noreferrer" href="https://github.com/abhishek2002Git/iNoteBook">Click here</a> to checkout the github repositry for the source code of  end.</h5>
+            <h5 className="my-3"><a target="_blank" rel="noreferrer" href="https://github.com/abhishek2002Git/frontendofinotebook">Click here</a> to checkout the github repositry for the source code of front end.</h5>
+            <h5 className="my-3"><a target="_blank" rel="noreferrer" href="https://github.com/abhishek2002Git/inotebookbackend">Click here</a> to checkout the github repositry for the source code of back end.</h5>
            
         </div>
     )
